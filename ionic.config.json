@@ -1,5 +1,7 @@
 {
   "name": "ionic-melody",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
