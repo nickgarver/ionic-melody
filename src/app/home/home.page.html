@@ -1,15 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Browse
-    </ion-title>
+    <ion-title>Browse Samples</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark">
-  <div class="ion-padding">
-    The world is your butt.
-    <p>{{ text }}</p>
-  </div>
-  <ion-button (click)="onChangeText()">Change Text</ion-button>
+<ion-content>
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <div id="card-stack">
+         <app-card></app-card>
+      </div>
+    </ion-row>
+  </ion-grid>
 </ion-content>
