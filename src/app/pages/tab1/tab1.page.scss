@@ -1,0 +1,28 @@
+// #card-stack {
+//   width: 100%;
+//   max-width: 450px;
+//   height: 450px;
+//   background: #047915;
+//   margin: 0px auto 0;
+//   position: relative;
+//   border-radius: 5px;
+// }
+
+/* Set the color on all ion-button elements */
+.up-vote {
+  --color: #fff;
+  --background: #e74c3c;
+}
+.down-vote {
+  --color: #fff;
+  --background: #2c3e50;
+}
+ion-card {
+  // margin: 0px auto 0;
+  // border-radius: 5px;
+  // position: absolute;
+  // text-align: center;
+  height: 450px;
+  width: 350px;
+  max-width: 450px;
+}
