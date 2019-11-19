@@ -1,6 +1,14 @@
 <ion-split-pane contentId="menu-content">
   <!--  our side menu  -->
   <ion-menu contentId="menu-content" side="end" type="push">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>internetboy</ion-title>
+        <ion-buttons slot=end>
+          <ion-menu-button auto-hide="false" class="hydrated ios button"></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
       <ion-list>
         <ion-item>
@@ -17,7 +25,7 @@
   <ion-router-outlet id="menu-content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>internetboy</ion-title>
+        <ion-title>My Sounds</ion-title>
         <ion-buttons slot=end>
           <ion-menu-button auto-hide="false" class="hydrated ios button"></ion-menu-button>
         </ion-buttons>
