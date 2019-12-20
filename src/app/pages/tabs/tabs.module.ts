@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { TabsPage } from './tabs.page';
+import {FirebaseUIModule} from 'firebaseui-angular';
 
 const routes: Routes = [
   {
@@ -34,6 +35,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    FirebaseUIModule,
     RouterModule.forChild(routes)
   ],
   declarations: [TabsPage]

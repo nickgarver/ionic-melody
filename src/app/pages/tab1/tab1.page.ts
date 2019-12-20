@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-tab1',
@@ -10,9 +11,15 @@ export class Tab1Page implements OnInit {
     initialSlide: 1,
     speed: 400
   };
-  constructor() { }
+  constructor(public afAuth: AngularFireAuth) { }
 
   ngOnInit() {
   }
+
+  signOut(){
+    this.afAuth.auth.signOut().then(() => {
+      location.reload();
+    });
+}
 
 }
