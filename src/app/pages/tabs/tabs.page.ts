@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { LoginModalPage } from 'src/app/pages/login-modal/login-modal.page';
 
 @Component({
   selector: 'app-tabs',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsPage implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) {
+
+  }
+
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: LoginModalPage
+    });
+    return await modal.present();
+  }
 
   ngOnInit() {
   }

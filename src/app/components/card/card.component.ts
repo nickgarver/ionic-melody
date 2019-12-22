@@ -13,6 +13,12 @@ export class CardComponent implements OnInit {
   sampleBMI = "1653580";
   sampleASCAP = "120498";
 
+  sampleName2 = "Bubble Synth ";
+  sampleInfo2 = "102 bpm - Db";
+  sampleCreator2 = "internetboy";
+  sampleSplit2 = "25/75";
+  sampleBMI2 = "9734875";
+  sampleASCAP2 = "803586";
 
   constructor() { }
 

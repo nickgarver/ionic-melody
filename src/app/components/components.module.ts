@@ -8,7 +8,11 @@ import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [IonicModule],
-  declarations: [CardComponent],
-  exports: [CardComponent]
+  declarations: [
+    CardComponent,
+  ],
+  exports: [
+    CardComponent,
+  ]
 })
 export class ComponentsModule{}

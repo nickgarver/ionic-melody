@@ -2,7 +2,7 @@
   <ion-menu contentId="menu-content" side="end" type="push">
     <ion-header>
       <ion-toolbar>
-        <ion-title>internetboy</ion-title>
+      <ion-title *ngIf="afAuth.auth.currentUser"> {{afAuth.auth.currentUser.displayName}} </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -12,7 +12,7 @@
           <ion-label>My Sounds</ion-label>
         </ion-item>
         <ion-item>Settings</ion-item>
-        <ion-item>Logout</ion-item>
+        <ion-item *ngIf="afAuth.auth.currentUser" (click)=signOut()>Logout</ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
@@ -31,19 +31,20 @@
       <!-- List of Text Items -->
       <ion-list>
         <ion-item>
-          <ion-label>Pokémon Yellow</ion-label>
+          <ion-icon name="play-circle" slot="start"></ion-icon>
+          <ion-label>New Money - 128bpm</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Mega Man X</ion-label>
+          <ion-label>Mega Man - 140bpm</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>The Legend of Zelda</ion-label>
+          <ion-label>The Legend of Zelda - 148bpm</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Pac-Man</ion-label>
+          <ion-label>Pac-Man - 103bpm</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Super Mario World</ion-label>
+          <ion-label>Super Mario - 74bpm</ion-label>
         </ion-item>
       </ion-list>
     </ion-content>

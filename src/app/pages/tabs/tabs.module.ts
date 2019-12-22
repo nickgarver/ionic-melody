@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { TabsPage } from './tabs.page';
 import {FirebaseUIModule} from 'firebaseui-angular';
+import { LoginModalPage } from 'src/app/pages/login-modal/login-modal.page';
 
 const routes: Routes = [
   {
@@ -38,6 +39,8 @@ const routes: Routes = [
     FirebaseUIModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [TabsPage]
+  declarations: [TabsPage,LoginModalPage],
+  entryComponents: [LoginModalPage]
+
 })
 export class TabsPageModule {}

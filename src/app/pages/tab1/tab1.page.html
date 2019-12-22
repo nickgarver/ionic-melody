@@ -1,13 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Browse</ion-title>
-    <ion-title *ngIf="afAuth.auth.currentUser"> {{afAuth.auth.currentUser.displayName}} </ion-title>
-    <ion-button *ngIf="afAuth.auth.currentUser" (click)=signOut()>Sign Out</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="center">
   <ion-slides pager="false" [options]="slideOpts" >
+    <ion-slide>
+      <app-card></app-card>
+    </ion-slide>
     <ion-slide>
       <app-card></app-card>
     </ion-slide>
